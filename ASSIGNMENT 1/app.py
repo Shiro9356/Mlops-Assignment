@@ -53,7 +53,7 @@ def filter_iris(
     paginated_data = filtered_data.iloc[start_idx:end_idx]
 
     # Visualization logic (Graph for filtered data)
-    image_path = f"static/{species or 'all'}_features_distribution.png"
+    image_path = f"static/{species}_features_distribution.png"
     os.makedirs("static", exist_ok=True)
     plt.figure(figsize=(12, 8))
     features = ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]
